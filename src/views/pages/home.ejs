@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Socket.IO chat</title>
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="head-section">
+        <div class="headLeft-section">
+          <div class="headLeft-sub">
+            <p>Users</p>
+          </div>
+        </div>
+        <div class="headRight-section">
+          <div class="headRight-sub">
+            <small class="userInfo"></small>
+          </div>
+        </div>
+      </div>
+      <div class="body-section">
+        <div class="left-section mCustomScrollbar">
+          <div class="chatList"></div>
+        </div>
+        <div class="right-section">
+          <div class="message mCustomScrollbar">
+            <ul class="msgList">
+            </ul>
+          </div>
+          <div class="right-section-bottom">
+            <form id="msgForm">
+              <input type="text" id="msgInput" placeholder="Message" />
+              <button id="btnSend" class="btn-send">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/index.js"></script>
+</html>
